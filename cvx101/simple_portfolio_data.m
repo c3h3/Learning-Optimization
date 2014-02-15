@@ -9,3 +9,7 @@ S = S/max(abs(diag(S)))*.2;
 S(:,n) = zeros(n,1);
 S(n,:) = zeros(n,1)';
 x_unif = ones(n,1)/n;
+
+save('simple_protfolia_matlab_gen_data.mat','n','pbar','S','x_unif');
+
+
